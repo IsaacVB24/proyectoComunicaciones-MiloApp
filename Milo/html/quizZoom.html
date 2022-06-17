@@ -210,32 +210,41 @@
     </div>
 <!--Fin quiz zoom-->
 
-	<center> <h1>¿El ícono correcto para compartir pantalla es de color verde?</h1> </center>
+	<center> <h1 id="preguntaCompPantalla">¿El ícono correcto para compartir pantalla es de color verde?</h1> </center>
 	   <br>
-	   <BR><h3><center>Seleccione verdadero o falso</center></h3></BR>
+	   <BR><h3 id="textoVoF"><center>Seleccione verdadero o falso</center></h3></BR>
 	
-	<!--Inicio quiz compartir pantalla-->
-	<div class="contenidoZoom2">
-        <div class="encabezado">
-            <div>
-                <p>Zoom</p>
-            </div>
-        </div>
-		<BR></BR><br><br>
-			<center><img src="../img/logo2ch.png"  alt=""> </center>
-<br><br><br><br><br><br><br>
-           <center><img src="../img/quiz_share.png"  alt=""> </center>
-		   <br>
-		   <br>
-		   <div class="radio">
-			<input type="radio" value = "Click me" onclick = "respCorrecta()" name="fav_language">
-			<label  ><h3>Verdadero</h3></label><br>
-			<input type="radio" value = "Click me" onclick = "respIncorrecta()"  name="fav_language">
-			<label ><H3>Falso</H3></label>
-			<br><br>
-		   </div>
-		   <br><br>
 
+
+
+
+
+
+
+
+
+
+	<!--Inicio quiz compartir pantalla-->
+	<div id="compartirPantalla">
+		<div>
+			<button class="verdaderoFalso" id="verdadero" onclick="quizCompPantallaCompletado()"><p>Verdadero</p></button>
+		</div>
+		<div>
+			<button class="verdaderoFalso" id="falso" onclick="respIncorrecta()"><p>Falso</p></button>
+		</div>
+		<div class="contenidoZoom2">
+			<div id="telefono">
+				<div class="encabezado">
+					<div>
+						<p>Zoom</p>
+					</div>
+				</div>
+				<BR></BR><br><br>
+				<center><img src="../img/logo2ch.png"  alt=""> </center>
+					<br><br><br><br><br><br><br>
+				<center><img src="../img/quiz_share.png"  alt=""> </center>
+			</div>
+		</div>
 	</div>
 	<!--Fin quiz compartir pantalla-->
 
