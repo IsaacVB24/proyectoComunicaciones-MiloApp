@@ -8,7 +8,7 @@
 */
 
 
-function respCorrecta(){            
+function respCorrecta(){
     document.getElementById("mensaje").innerHTML = "¡Felicidades! Respuesta correcta.";
     document.getElementById("mensaje").style.backgroundColor = "#cae8ca";
     document.getElementById("mensaje").style.border = "2px solid #3d863f";
