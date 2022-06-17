@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.contenidoZoom{
+    width: 20rem;
+    margin: auto;
+    text-align: center;
+    height: 30rem;
+    position: static;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+.encabezado{
+    background-color: #1b1f4e;
+    border-radius: 20px 20px 0px 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    width: 100%;
+}
+.botonesContenido{
+    padding-top: 4rem;
+    border: 1px solid red;
+    height: 20rem;
+}
+.boton{
+    border-radius: 20px;
+    background-color: #2c6fec;
+    border: none;
+    width: 7rem;
+    height: 7rem;
+    margin: 10px;
+}
+#reunion{
+    background-color: #f0701a;
+    margin-top: 15px;
+    width: 8rem;
+    height: 8rem;
+}
+.botonesMenu{
+    width: auto;
+    display: inline;
+    
+}
+a{
+    text-decoration: none;
+}
+.txtBoton{
+    color: white;
+    font-size: 1rem;
+}
+.imgBoton{
+    width: 70%;
+}
