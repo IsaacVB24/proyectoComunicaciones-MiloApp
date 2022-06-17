@@ -49,6 +49,7 @@ function quizCompletado(){
 //    document.getElementById("fondoNuevaReunion").innerHTML = "";
     $("#fondoNuevaReunion").fadeOut(1000);
     $("#textoReunion").fadeOut(1000);
+    $("#texto2Reunion").fadeOut(1000);
     document.getElementById("preguntaReunion").style.textDecoration = "line-through";
     document.getElementById("preguntaReunion").innerHTML = "¿Cómo creamos una nueva reunión? (COMPLETADO)";
     quiz1 = quiz1 + 1;
