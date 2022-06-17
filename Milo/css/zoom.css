@@ -94,3 +94,19 @@ a{
 .radio{
     font-size: 20px;
 }
+
+#botonv{
+    background-color: white;
+    color: black;
+    border: 2px solid #e86e10; /* Green */
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    font-size: 40px;
+    border-radius: 10px;
+    top: 200px;
+}
+#botonv:hover {
+    background-color: #0f6449; /* Green */
+    color: white;
+}
