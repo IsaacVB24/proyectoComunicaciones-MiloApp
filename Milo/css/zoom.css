@@ -14,16 +14,17 @@
 }
 .encabezado{
     background-color: #1b1f4e;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 15px 15px 0px 0px;
     padding-top: 5px;
     padding-bottom: 5px;
     color: white;
     width: 100%;
+    cursor: context-menu;
 }
 .botonesContenido{
     padding-top: 4rem;
     border: 1px solid red;
-    height: 20rem;
+    height: 21.5rem;
 }
 .boton{
     border-radius: 20px;
@@ -40,9 +41,14 @@
     height: 8rem;
 }
 .botonesMenu{
-    width: auto;
-    display: inline;
-    
+    width: 25%;
+    text-align: center;
+    border-left: 1px solid black;
+}
+.menu{
+    background-color: #ececf1;
+    cursor: context-menu;
+    border-radius: 0px 0px 15px 15px;
 }
 a{
     text-decoration: none;
