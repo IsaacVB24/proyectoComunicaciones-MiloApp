@@ -115,9 +115,6 @@
 					<ul class="main-nav nav navbar-nav">
 						<li class="active"><a href="../html/index.html">Inicio</a></li>
 						<li><p id="pagActual">Zoom</p></li>
-						<li><a href="../html/smartphone.html">Smartphone</a></li>
-						<li><a href="../html/whatsapp.html">Whatsapp</a></li>
-						<li><a href="#">Más de Milo</a></li>
 					</ul>
 					<!-- /NAV -->
 				</div>
@@ -152,7 +149,8 @@
 		<!-- /SECTION -->
 
 		
-        
+       <center> <h1>¿Cómo creamos una nueva reunión?</h1> </center>
+	   <br>
     <div class="contenidoZoom">
         <div class="encabezado">
             <div>
@@ -163,13 +161,18 @@
 
         <div class="botonesContenido">
             <div>
-                <button class="boton" id="reunion">
+                <button class="boton" id="reunion" value = "Click me" onclick = "unirse()">
                     <a href="#">
                         <img src="../img/zoomChafa.png" alt="Nva Reu" class="imgBoton">
                         <p class="txtBoton">Nueva reunión</p>
                     </a>
                 </button>
-                <button class="boton">
+				<script type = "text/javascript">  
+					function unirse() {  
+					   alert (" Respuesta correcta, Felicidades");  
+					}  
+			  </script>
+                <button class="boton" value = "Click me" onclick = "fun()">
                     <a href="#">
                         <img src="../img/unirseChafa.png" alt="Nva Reu" class="imgBoton">
                         <p class="txtBoton">Unirse</p>
@@ -177,13 +180,18 @@
                 </button>
             </div>
             <div>
-                <button class="boton">
+				<script type = "text/javascript">  
+					function fun() {  
+					   alert (" No es la respuesta correcta, intente con otra opción");  
+					}  
+			  </script>    
+                <button type="button" class="boton" value = "Click me" onclick = "fun()">
                     <a href="#">
                         <img src="../img/programarChafa.png" alt="Nva Reu" class="imgBoton">
                         <p class="txtBoton">Programar</p>
                     </a>
                 </button>
-                <button class="boton">
+                <button class="boton" value = "Click me" onclick = "fun()">
                     <a href="#">
                         <img src="../img/compartirPantallaChafa.png" alt="Nva Reu" class="imgBoton">
                         <p class="txtBoton">Compartir</p>
@@ -194,9 +202,10 @@
 
 
         <div class="menu">
+		 
             <table>
                 <tr>
-                    <td class="botonesMenu" style="border: none;"><p>Reunión y Chat</p></td>
+                    <td class="botonesMenu" ><p>Reunión y Chat</p></td>
                     <td class="botonesMenu"><p>Reuniones</p></td>
                     <td class="botonesMenu"><p>Contactos</p></td>
                     <td class="botonesMenu"><p>Más</p></td>

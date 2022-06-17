@@ -17,6 +17,16 @@ a {
   -webkit-transition: 0.2s color;
   transition: 0.2s color;
 }
+.botonesMenu{
+  background-color: #cb5b04; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: radius 1px;;
+   
+    
+}
 
 a:hover, a:focus {
   color: #cb4818;
