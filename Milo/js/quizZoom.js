@@ -38,6 +38,8 @@ function cancelar(){
     return;
 }
 
+let quiz1 = 0;
+let quiz2 = 0;
 function quizCompletado(){
     document.getElementById("mensaje").innerHTML = "¡Felicidades! Completaste el quiz";
     document.getElementById("mensaje").style.backgroundColor = "#cae8ca";
@@ -49,7 +51,33 @@ function quizCompletado(){
     $("#textoReunion").fadeOut(1000);
     document.getElementById("preguntaReunion").style.textDecoration = "line-through";
     document.getElementById("preguntaReunion").innerHTML = "¿Cómo creamos una nueva reunión? (COMPLETADO)";
+    quiz1 = quiz1 + 1;
+    acabarTodoElQuiz();
     return;
+}
+function quizCompPantallaCompletado(){
+    document.getElementById("mensaje").innerHTML = "¡Felicidades! Completaste el quiz 'CompartirPantalla'";
+    document.getElementById("mensaje").style.backgroundColor = "#cae8ca";
+    document.getElementById("mensaje").style.border = "2px solid #3d863f";
+    $("#mensaje").fadeIn(1000);
+    $("#mensaje").fadeOut(10000);
+    $("#compartirPantalla").fadeOut(1000);
+    $("#textoVoF").fadeOut(1000);
+    document.getElementById("preguntaCompPantalla").style.textDecoration = "line-through";
+    document.getElementById("preguntaCompPantalla").innerHTML = "¿El ícono correcto para compartir pantalla es de color verde? (COMPLETADO)";
+    quiz2 = quiz2 + 1;
+    acabarTodoElQuiz();
+    return;
+}
+function acabarTodoElQuiz(){
+    if(quiz1 == 1 & quiz2 == 1){
+        document.getElementById("preguntaReunion").style.display = "none";
+        document.getElementById("preguntaCompPantalla").style.textDecoration = "initial";
+        document.getElementById("preguntaCompPantalla").innerHTML = "¡Felicidades! Completaste todos los Quizes de esta sección.<br><br><table style='font-weight: initial; font-size: large;'><tr><td><button onclick='recargar();'>Repetir Quizes</button></td><td><button style='margin-left:1%;'><a href'../html/index.html'>Regresar al menú principal</a></button></td></tr></table>";
+    }
+}
+function recargar(){
+    location.reload();
 }
 function respIncorrecta(){            
     document.getElementById("mensaje").innerHTML = "¡Intente de nuevo! Respuesta incorrecta.";
