@@ -82,10 +82,12 @@ a{
     position: sticky;
     top: 0;
     padding: 5px;
-    background-color: #cae8ca;
-    border: 2px solid #4CAF50;
+    padding-top: 10px;
     text-align: center;
+    height: 50px;
     font-size: medium;
+    font-weight: bold;
+    display: none;
 }
 
 .share{
