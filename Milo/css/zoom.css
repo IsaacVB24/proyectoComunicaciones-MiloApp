@@ -4,16 +4,30 @@
 }
 
 .contenidoZoom{
-    width: 20rem;
+    width: 25rem;
     margin: auto;
     text-align: center;
-    height: 40rem;
+    height: 42rem;
     position: static;
     border-radius: 20px;
     border: 2px solid black;
     margin-bottom: 6rem;
 }
+.contenidoZoom2{
+    width: 25rem;
+    margin: auto;
+    text-align: center;
+    height: 42rem;
+    position: static;
+    border-radius: 20px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(33, 33, 33);
+    margin-bottom: 6rem;
+}
+ 
 .encabezado{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 22px;
     background-color: #1b1f4e;
     border-radius: 15px 15px 0px 0px;
     padding-top: 3px;
@@ -24,7 +38,7 @@
 }
 .botonesContenido{
     padding-top: 2rem;
-    border: 1px solid red;
+    border: 1px solid rgb(206, 48, 48);
     height: 32rem;
 }
 .boton{
@@ -44,7 +58,7 @@
 .botonesMenu{
     width: 25%;
     text-align: center;
-    border-left: 1px solid black;
+    border-left: 1px solid rgb(35, 35, 35);
     font-size: 10px;
 }
 .menu{
@@ -61,4 +75,11 @@ a{
 }
 .imgBoton{
     width: 60%;
+}
+
+.share{
+   width: 10px;
+}
+.radio{
+    font-size: 20px;
 }
