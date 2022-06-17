@@ -76,55 +76,45 @@
 
     
     <!--Mockup Ajustes Nueva Reuinón-->
-    <div class="contenidoZoom">
-        <div class="encabezado">
+    <div id="fondoNuevaReunion">
+        <div class="encabezadoLlamada">
             <div>
-                <p>Reunión y Chat</p>
+                <a onclick="cancelar()"><p id="cancelar">Cancelar</p></a>
+                <p>Iniciar una reunión</p>
             </div>
         </div>
 
+        <br><br>
 
-        <div class="botonesContenido">
-            <div>
-                <button class="boton" id="reunion">
-                    <a href="#">
-                        <img src="../img/zoomChafa.png" alt="Nva Reu" class="imgBoton">
-                        <p class="txtBoton">Nueva reunión</p>
-                    </a>
-                </button>
-                <button class="boton">
-                    <a href="#">
-                        <img src="../img/unirseChafa.png" alt="Nva Reu" class="imgBoton">
-                        <p class="txtBoton">Unirse</p>
-                    </a>
-                </button>
-            </div>
-            <div>
-                <button class="boton">
-                    <a href="#">
-                        <img src="../img/programarChafa.png" alt="Nva Reu" class="imgBoton">
-                        <p class="txtBoton">Programar</p>
-                    </a>
-                </button>
-                <button class="boton">
-                    <a href="#">
-                        <img src="../img/compartirPantallaChafa.png" alt="Nva Reu" class="imgBoton">
-                        <p class="txtBoton">Compartir</p>
-                    </a>
-                </button>
-            </div>
-        </div>
-
-
-        <div class="menu">
-            <table>
+        <div>
+            <table class="tablaNuevaReunion">
                 <tr>
-                    <td class="botonesMenu"><p>Reunión y Chat</p></td>
-                    <td class="botonesMenu"><p>Reuniones</p></td>
-                    <td class="botonesMenu"><p>Contactos</p></td>
-                    <td class="botonesMenu"><p>Más</p></td>
+                    <th class="fila">
+                        <p>Video activado</p>
+                    </th>
+                    <td>
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider round" style="border: 1px solid black;"></span>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="fila">
+                        <p>Usar ID personal de la reunión (PMI)</p>
+                    </th>
+                    <td>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round" style="border: 1px solid black;"></span>
+                        </label>
+                    </td>
                 </tr>
             </table>
+        </div>
+
+        <div>
+            <button class="iniciarReunion">Iniciar una reunión</button>
         </div>
     </div>
 
