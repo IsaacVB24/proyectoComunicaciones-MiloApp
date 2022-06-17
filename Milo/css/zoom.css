@@ -15,10 +15,10 @@
 }
 .contenidoZoom2{
     width: 25rem;
-    margin: auto;
     text-align: center;
     height: 42rem;
     position: static;
+    margin: auto;
     border-radius: 20px;
     border: 2px solid rgb(255, 255, 255);
     background-color: rgb(33, 33, 33);
@@ -225,3 +225,44 @@ input:checked + .slider:before {
 #preguntaReunion{
     cursor: context-menu;
 }
+#telefono{
+    display: inline;
+}
+.verdaderoFalso{
+    margin: 30px;
+    width: 150px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 150px;
+    font-size: large;
+    border-radius: 30px;
+    position: absolute;
+    text-align: center;
+}
+#verdadero{
+    float: right;
+    margin-left: 10%;
+    background-color: #78dd78;
+}
+#verdadero:hover{
+    transition: all .5s;
+    font-size: x-large;
+    background-color: #78dd78bb;
+}
+#falso{
+    margin-left: 80%;
+    background-color: #e25a5a;
+}
+#falso:hover{
+    transition: all .5s;
+    font-size: x-large;
+    background-color: #e25a5abe;
+}
+
+/*
+    background-color: #cae8ca;
+    border: 2px solid #3d863f;
+
+    Respuesta incorrecta
+    background-color: #e8caca;
+    border: 2px solid #863d3d;
+*/
