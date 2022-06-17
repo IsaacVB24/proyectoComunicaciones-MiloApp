@@ -573,15 +573,15 @@ textarea.input {
 	Main nav
 \*----------------------------*/
 
-.main-nav>li+li {
+.main-nav>li+li, #pagActual {
   margin-left: 30px
 }
 
-.main-nav>li>a {
+.main-nav>li>a, #pagActual {
   padding: 20px 0px;
 }
 
-.main-nav>li>a:hover, .main-nav>li>a:focus, .main-nav>li.active>a {
+.main-nav>li>a:hover, .main-nav>li>a:focus, .main-nav>li.active>a, #pagActual {
   color: #d94712;
   background-color: transparent;
 }
