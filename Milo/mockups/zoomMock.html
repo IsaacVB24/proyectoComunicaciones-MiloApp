@@ -8,6 +8,8 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <link href="../css/zoom.css" rel="stylesheet">
+<script type="text/javascript" src="../js/quizZoom.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
 
@@ -18,7 +20,6 @@
     -->
 
     <div id="mensaje">
-        Mensaje
     </div>
     <!--Mockup Nueva Reuinón-->
     <div class="contenidoZoom">
@@ -31,13 +32,11 @@
 
         <div class="botonesContenido">
             <div>
-                <button class="boton" id="reunion">
-                    <a href="#">
+                <button class="boton" id="reunion" onclick="respCorrecta()">
                         <img src="../img/zoomChafa.png" alt="Nva Reu" class="imgBoton">
                         <p class="txtBoton">Nueva reunión</p>
-                    </a>
                 </button>
-                <button class="boton">
+                <button class="boton" onclick="respIncorrecta()">
                     <a href="#">
                         <img src="../img/unirseChafa.png" alt="Nva Reu" class="imgBoton">
                         <p class="txtBoton">Unirse</p>
