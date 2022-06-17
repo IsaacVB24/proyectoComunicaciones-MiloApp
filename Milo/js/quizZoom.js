@@ -41,7 +41,7 @@ function cancelar(){
 let quiz1 = 0;
 let quiz2 = 0;
 function quizCompletado(){
-    document.getElementById("mensaje").innerHTML = "¡Felicidades! Completaste el quiz";
+    document.getElementById("mensaje").innerHTML = "¡Felicidades! Completaste el quiz 'Nueva Reunión'";
     document.getElementById("mensaje").style.backgroundColor = "#cae8ca";
     document.getElementById("mensaje").style.border = "2px solid #3d863f";
     $("#mensaje").fadeIn(1000);
