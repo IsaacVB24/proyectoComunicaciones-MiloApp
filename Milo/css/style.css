@@ -589,6 +589,9 @@ textarea.input {
 .main-nav>li+li, #pagActual {
   margin-left: 30px
 }
+#pagActual{
+  cursor: context-menu;
+}
 
 .main-nav>li>a, #pagActual {
   padding: 20px 0px;
