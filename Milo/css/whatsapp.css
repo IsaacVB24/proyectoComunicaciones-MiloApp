@@ -137,11 +137,10 @@ input.circle{
 
 .center {
     margin: 0;
-    position: absolute;
-    top: 75%;
+    position: relative;
     left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
   }
 
 #fin{
