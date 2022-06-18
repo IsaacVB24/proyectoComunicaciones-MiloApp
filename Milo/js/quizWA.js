@@ -13,7 +13,7 @@ function respCorrecta(){
     document.getElementById("mensaje").style.backgroundColor = "#cae8ca";
     document.getElementById("mensaje").style.border = "2px solid #3d863f";
     $("#mensaje").fadeIn(1000);
-    $("#mensaje").fadeOut(10000);
+    $("#mensaje").fadeOut(5000);
     return;
 }
 function respIncorrecta(){            
@@ -28,7 +28,7 @@ function respIncorrecta(){
 function respCorrectaNuevaReunion(){
     respCorrecta();
     let id = "fondoNuevaReunion";
-    document.getElementById("contenidoZoom").setAttribute('id', 'fondoNuevaReunion');
+    document.getElementById("contenidoWA").setAttribute('id', 'fondoNuevaReunion');
     document.getElementById("fondoNuevaReunion").innerHTML = "<div class='encabezadoLlamada'><div><a onclick='cancelar()'><p id='cancelar'>Cancelar</p></a><p>Iniciar una reunión</p></div></div><br><br><div><table class='tablaNuevaReunion'><tr class='fila'><th><p>Video activado</p></th><td><label class='switch'><input type='checkbox' checked><span class='slider round' style='border: 1px solid black;'></span></label></td></tr><tr><th class='fila'><p>Usar ID personal de la reunión (PMI)</p></th><td><label class='switch'><input type='checkbox'><span class='slider round' style='border: 1px solid black;'></span></label></td></tr></table></div><div><button class='iniciarReunion' onclick='quizCompletado(" + id + ")'>Iniciar una reunión</button></div>";
     return;
 }

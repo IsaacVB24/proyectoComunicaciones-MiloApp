@@ -20,12 +20,13 @@
 
 		<!-- nouislider -->
 		<link type="text/css" rel="stylesheet" href="../css/nouislider.min.css"/>
-        <link href="../css/whatsapp.css" rel="stylesheet">
-		<script type="text/javascript" src="../js/quizWA.js"></script>
+        <link href="../css/zoom.css" rel="stylesheet">
+		<script type="text/javascript" src="../js/quizZoom.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 		<!-- Font Awesome Icon -->
 		<link rel="stylesheet" href="../css/font-awesome.min.css">
+		<link  rel="icon" href="../img/milo.png">
 
 		<!-- Custom stlylesheet -->
 		<link type="text/css" rel="stylesheet" href="../css/style.css"/>
@@ -153,39 +154,101 @@
 		</div>
 		<!-- /SECTION -->
 
-		<center> <h3 id = "preguntaReunion"> Luego de abrir WhatsApp</h3> </center>
-        <center> <h1 id="preguntaReunion">¿Dónde debemos tocar para enviar un nuevo mensaje?</h1> </center>
+		
+        <center> <h1 id="preguntaReunion">¿Cómo creamos una nueva reunión?</h1> </center>
 	    <br>
-	    <BR><h3 id="textoReunion"><center>Seleccione el icono correto</center></h3></BR>
+	    <BR><h3 id="textoReunion"><center>Seleccione el icono correcto</center></h3><br><p id="texto2Reunion" style="text-align: center; font-size: large;">No se creará una reunión real</p></BR>
     
 	
 	
 	
 	
 	<!--Quiz Crear nueva reunión-->
-	<div id="contenidoWA">
+	<div id="contenidoZoom">
         <div class="encabezado">
             <div>
-                <p>WhatsApp</p>
-				<img src = "../img/WASearch.PNG">
-				<img src = "../img/WABar.PNG">
+                <p>Reunión y Chat</p>
             </div>
         </div>
 
+
         <div class="botonesContenido">
             <div>
-                <button class="WAMensaje" value = "Click me" onclick = "respCorrectaNuevaReunion()">
+                <button class="boton" id="reunion" value = "Click me" onclick = "respCorrectaNuevaReunion()">
+                        <img src="../img/zoomChafa.png" alt="Nva Reu" class="imgBoton">
+                        <p class="txtBoton">Nueva reunión</p>
                 </button>
-                
+                <button class="boton" value = "Click me" onclick = "respIncorrecta()">
+                        <img src="../img/unirseChafa.png" alt="Nva Reu" class="imgBoton">
+                        <p class="txtBoton">Unirse</p>
+                </button>
+            </div>
+            <div>
+                <button type="button" class="boton" value = "Click me" onclick = "respIncorrecta()">
+                        <img src="../img/programarChafa.png" alt="Nva Reu" class="imgBoton">
+                        <p class="txtBoton">Programar</p>
+                </button>
+                <button class="boton" value = "Click me" onclick = "respIncorrecta()">
+                        <img src="../img/compartirPantallaChafa.png" alt="Nva Reu" class="imgBoton">
+                        <p class="txtBoton">Compartir</p>
+                </button>
             </div>
 		</div>
 
-		<button class= "WAMensajeIcon"> </button>
 
+        <div class="menu">
+		
+            <table>
+                <tr>
+                    <td class="botonesMenu" ><p>Reunión y Chat</p></td>
+                    <td class="botonesMenu"><p>Reuniones</p></td>
+                    <td class="botonesMenu"><p>Contactos</p></td>
+                    <td class="botonesMenu"><p>Más</p></td>
+                </tr>
+            </table>
+        </div>
     </div>
-
-	
 <!--Fin quiz zoom-->
+
+	<center> <h1 id="preguntaCompPantalla">¿El ícono correcto para compartir pantalla es de color verde?</h1> </center>
+	   <br>
+	   <BR><h3 id="textoVoF"><center>Seleccione verdadero o falso</center></h3></BR>
+	
+
+
+
+
+
+
+
+
+
+
+	<!--Inicio quiz compartir pantalla-->
+	<div id="compartirPantalla">
+		<div>
+			<button class="verdaderoFalso" id="verdadero" onclick="quizCompPantallaCompletado()"><p>Verdadero</p></button>
+		</div>
+		<div>
+			<button class="verdaderoFalso" id="falso" onclick="respIncorrecta()"><p>Falso</p></button>
+		</div>
+		<div class="contenidoZoom2">
+			<div id="telefono">
+				<div class="encabezado">
+					<div>
+						<p>Zoom</p>
+					</div>
+				</div>
+				<BR></BR><br><br>
+				<center><img src="../img/logo2ch.png"  alt=""> </center>
+					<br><br><br><br><br><br><br>
+				<center><img src="../img/quiz_share.png"  alt=""> </center>
+			</div>
+		</div>
+	</div>
+	<!--Fin quiz compartir pantalla-->
+
+
 
 		<br><br>
 
