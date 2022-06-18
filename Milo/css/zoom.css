@@ -305,7 +305,7 @@ input:checked + .slider:before {
     cursor: pointer;
 }
 .contenidoLlamada{
-    height: 34rem;
+    height: 32rem;
     background-image: url(../img/logo2ch.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -316,12 +316,15 @@ input:checked + .slider:before {
 }
 .textoMenuLlamada{
     color: white;
-}
-#textoMenuLlamada{
     padding-left: 3px;
     padding-right: 3px;
 }
 .imagenMenuLlamada{
     width: 30px;
-    padding-top: 5px;
+    padding-top: 10px;
+}
+#warning{
+    color: white;
+    text-align: center;
+    padding-top: 10%;
 }

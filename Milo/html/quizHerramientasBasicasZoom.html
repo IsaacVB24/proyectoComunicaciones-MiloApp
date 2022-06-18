@@ -21,7 +21,7 @@
 		<!-- nouislider -->
 		<link type="text/css" rel="stylesheet" href="../css/nouislider.min.css"/>
         <link href="../css/zoom.css" rel="stylesheet">
-		<script type="text/javascript" src="../js/quizZoom.js"></script>
+		<script type="text/javascript" src="../js/herramientasBasicasZoom.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 		<!-- Font Awesome Icon -->
@@ -164,93 +164,49 @@
 	
 	
 	<!--Quiz Crear nueva reunión-->
-	<div id="contenidoZoom">
-        <div class="encabezado">
-            <div>
-                <p>Reunión y Chat</p>
-            </div>
+	<div id="llamadaEnCurso">
+        <div class="cabezeraLlamadaEnCurso">
+            <table style="width: 100%;">
+                <tr>
+                    <td><img src="../img/speakerActivo.png" alt="speakerActivo" class="imgLlamadaEnCurso" id="speaker" onclick="desactivarAudio()"></td>
+                    <td><p class="textoLlamadaEnCurso" style="cursor: context-menu;">Zoom</p></td>
+                    <td><button id="finalizarLlamada">Finalizar</button></td>
+                </tr>
+            </table>
         </div>
 
 
-        <div class="botonesContenido">
-            <div>
-                <button class="boton" id="reunion" value = "Click me" onclick = "respCorrectaNuevaReunion()">
-                        <img src="../img/zoomChafa.png" alt="Nva Reu" class="imgBoton">
-                        <p class="txtBoton">Nueva reunión</p>
-                </button>
-                <button class="boton" value = "Click me" onclick = "respIncorrecta()">
-                        <img src="../img/unirseChafa.png" alt="Nva Reu" class="imgBoton">
-                        <p class="txtBoton">Unirse</p>
-                </button>
-            </div>
-            <div>
-                <button type="button" class="boton" value = "Click me" onclick = "respIncorrecta()">
-                        <img src="../img/programarChafa.png" alt="Nva Reu" class="imgBoton">
-                        <p class="txtBoton">Programar</p>
-                </button>
-                <button class="boton" value = "Click me" onclick = "respIncorrecta()">
-                        <img src="../img/compartirPantallaChafa.png" alt="Nva Reu" class="imgBoton">
-                        <p class="txtBoton">Compartir</p>
-                </button>
-            </div>
-		</div>
+        <div class="contenidoLlamada">
+            <h2 id="warning">Tu video y tu audio NO se activarán realmente</h2>
+        </div>
 
 
-        <div class="menu">
-		
-            <table>
+        <div class="botonesLlamada">
+            <table style="cursor: pointer;">
                 <tr>
-                    <td class="botonesMenu" ><p>Reunión y Chat</p></td>
-                    <td class="botonesMenu"><p>Reuniones</p></td>
-                    <td class="botonesMenu"><p>Contactos</p></td>
-                    <td class="botonesMenu"><p>Más</p></td>
+                    <td onclick="activarMicrofono()" id="microfono"><img src="../img/microfonoInactivo.png" alt="microfonoActivo" class="imagenMenuLlamada" id="imgAudio"></td>
+
+                    <td onclick="activarVideo()" id="video"><img src="../img/videoInactivo.png" alt="videoActivo" class="imagenMenuLlamada" id="imgVideo"></td>
+
+                    <td onclick="compartirPantalla()" id="compartirPantalla"><img src="../img/compartitPantalla.png" alt="compartirPantalla" class="imagenMenuLlamada" id="imgCompartir"></td>
+                    
+                    <td onclick="activarMicrofono()" id="microfono"><img src="../img/personasEnReunion.png" alt="personasEnReunion" class="imagenMenuLlamada" id="imgParticipantes"></td>
+                    
+                    <td onclick="activarMicrofono()" id="microfono"><img src="../img/iconoMas.png" alt="iconoMas" class="imagenMenuLlamada" id="imgMas"></td>
+                </tr>
+                <tr>
+                    <td class="textoMenuLlamada" id="activarAudio" onclick="activarMicrofono()">Activar audio</td>
+                    <td class="textoMenuLlamada" id="activarVideo" onclick="activarVideo()">Iniciar video</td>
+                    <td class="textoMenuLlamada" id="compartir">Compartir</td>
+                    <td class="textoMenuLlamada" id="participantes">Participantes</td>
+                    <td class="textoMenuLlamada" id="mas">Más</td>
                 </tr>
             </table>
         </div>
     </div>
 <!--Fin quiz zoom-->
 
-	<center> <h1 id="preguntaCompPantalla">¿El ícono correcto para compartir pantalla es de color verde?</h1> </center>
-	   <br>
-	   <BR><h3 id="textoVoF"><center>Seleccione verdadero o falso</center></h3></BR>
-	
 
-
-
-
-
-
-
-
-
-
-	<!--Inicio quiz compartir pantalla-->
-	<div id="compartirPantalla">
-		<div>
-			<button class="verdaderoFalso" id="verdadero" onclick="quizCompPantallaCompletado()"><p>Verdadero</p></button>
-		</div>
-		<div>
-			<button class="verdaderoFalso" id="falso" onclick="respIncorrecta()"><p>Falso</p></button>
-		</div>
-		<div class="contenidoZoom2">
-			<div id="telefono">
-				<div class="encabezado">
-					<div>
-						<p>Zoom</p>
-					</div>
-				</div>
-				<BR></BR><br><br>
-				<center><img src="../img/logo2ch.png"  alt=""> </center>
-					<br><br><br><br><br><br><br>
-				<center><img src="../img/quiz_share.png"  alt=""> </center>
-			</div>
-		</div>
-	</div>
-	<!--Fin quiz compartir pantalla-->
-
-
-
-		<br><br>
 
 		<!-- FOOTER -->
 		<footer id="footer">
