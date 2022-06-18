@@ -53,6 +53,8 @@ function sendText(){
     message.innerHTML = inputText;
     message.style.visibility = "visible";
 
+    quizCompletado()
+    return;
 }
 
 function quizCompletado(){
@@ -60,11 +62,12 @@ function quizCompletado(){
     document.getElementById("mensaje").style.backgroundColor = "#cae8ca";
     document.getElementById("mensaje").style.border = "2px solid #3d863f";
     $("#mensaje").fadeIn(1000);
-    $("#mensaje").fadeOut(10000);
-//    document.getElementById("fondoNuevaReunion").innerHTML = "";
-    $("#fondoNuevaReunion").fadeOut(1000);
-    $("#textoReunion").fadeOut(1000);
-    document.getElementById("preguntaReunion").style.textDecoration = "line-through";
-    document.getElementById("preguntaReunion").innerHTML = "¿Cómo creamos una nueva reunión? (COMPLETADO)";
+    $("#mensaje").fadeOut(5000);
+    $("#q2").fadeOut(5000, "linear", () => {$("#fin").fadeIn(1000);} );
+    $("#textoReunion").fadeOut(100);
+    document.getElementById("pwa1").style.textDecoration = "line-through";
+    document.getElementById("pwa2").style.textDecoration = "line-through";
+    document.getElementById("pwa1").innerHTML = "(COMPLETADO)";
+    document.getElementById("pwa2").innerHTML = "¿Cómo enviar un mensaje?";
     return;
 }
