@@ -297,7 +297,7 @@ input:checked + .slider:before {
 }
 #finalizarLlamada{
     border-radius: 5px;
-    background-color: #e25a5a;
+    background-color: #e61818;
     padding: 7px;
     border: none;
     color: white;
@@ -311,8 +311,8 @@ input:checked + .slider:before {
     background-position: center;
     background-size: 10rem;
     background-color: rgb(41, 41, 41);
-    /*BORRAR SIGUIENTE ESTILO:*/
-    border: 1px solid white;
+    /*BORRAR SIGUIENTE ESTILO:
+    border: 1px solid white;*/
 }
 .textoMenuLlamada{
     color: white;
