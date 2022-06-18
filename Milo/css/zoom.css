@@ -298,7 +298,7 @@ input:checked + .slider:before {
 #finalizarLlamada{
     border-radius: 5px;
     background-color: #e61818;
-    padding: 7px;
+    padding: 5px;
     border: none;
     color: white;
     font-weight: bold;
@@ -317,14 +317,16 @@ input:checked + .slider:before {
 .textoMenuLlamada{
     color: white;
     padding-left: 3px;
+    font-size: xx-small;
     padding-right: 3px;
 }
 .imagenMenuLlamada{
-    width: 30px;
+    width: 20px;
     padding-top: 10px;
 }
 #warning{
     color: white;
     text-align: center;
     padding-top: 10%;
+    font-size: medium;
 }
