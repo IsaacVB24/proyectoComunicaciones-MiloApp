@@ -39,7 +39,7 @@
 
     </head>
 	<body>
-		<div id="mensaje">
+		<div id="mensaje" class="h-center">
 			Mensaje
 		</div>
 		<!-- HEADER -->
@@ -151,39 +151,53 @@
 			</div>
 			<!-- /container -->
 		</div>
-		<!-- /SECTION -->
+	<!-- /SECTION -->
 
-		<center> <h3 id = "preguntaReunion"> Luego de abrir WhatsApp</h3> </center>
-        <center> <h1 id="preguntaReunion">¿Dónde debemos tocar para enviar un nuevo mensaje?</h1> </center>
-	    <br>
-	    <BR><h3 id="textoReunion"><center>Seleccione el icono correto</center></h3></BR>
-    
+	<center> <h3 id = "pwa1"> Luego de abrir WhatsApp</h3> </center>
+	<center> <h1 id= "pwa2">¿Dónde debemos tocar para enviar un nuevo mensaje?</h1> </center>
+	<br>
+	<BR><h3 id="textoReunion"><center>Da click en los elementos correctos</center></h3></BR>
 	
-	
-	
-	
+	<center><a id = "fin" href = "index.html"> Regresar al menu principal</a><center>
+
 	<!--Quiz Crear nueva reunión-->
-	<div id="contenidoWA">
+	<div class = "contenidoWA" id = "q1">
         <div class="encabezado">
             <div>
                 <p>WhatsApp</p>
-				<img src = "../img/WASearch.PNG">
-				<img src = "../img/WABar.PNG">
+				<img src = "../img/WASearch.PNG" onclick="respIncorrecta()">
+				<img src = "../img/WABar.PNG" onclick="respIncorrecta()">
             </div>
         </div>
 
         <div class="botonesContenido">
-            <div>
-                <button class="WAMensaje" value = "Click me" onclick = "respCorrectaNuevaReunion()">
+			<div>
+				<button class="WAMensaje" value = "Tu contacto" onclick = "respCorrecta()">
                 </button>
                 
             </div>
 		</div>
-
-		<button class= "WAMensajeIcon"> </button>
-
+		
+		<button class= "WAMensajeIcon" onclick="respIncorrecta()"> </button>
+		
+		
     </div>
 
+	<div class = "contenidoWA" id = "q2">
+		
+		<div class="encabezado">
+			<img src = "../img/WAPerson.PNG">
+        </div>
+
+		
+		<div style = "position: relative; top: 70%;">
+			<p class = "WAMessage" id= "WAMessage"> Holaaaaaaaaaaaaaaaaaaaaaaaa</p>
+			<input type="text" class = "WAText" id ="WAText" placeholder="Enviar un mensaje...">
+			<button class = "send" onclick="sendText()" ></button>
+		</div>
+
+	</div>
+	
 	
 <!--Fin quiz zoom-->
 
